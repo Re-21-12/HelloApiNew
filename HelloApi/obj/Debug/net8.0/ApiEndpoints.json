@@ -1,0 +1,91 @@
+[
+  {
+    "ContainingType": "HelloApi.Controllers.MessageController",
+    "Method": "GetAll",
+    "RelativePath": "api/Message",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloApi.Controllers.MessageController",
+    "Method": "Create",
+    "RelativePath": "api/Message",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HelloApi.Models.Dtos.MessageCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloApi.Controllers.MessageController",
+    "Method": "GetById",
+    "RelativePath": "api/Message/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloApi.Controllers.MessageController",
+    "Method": "Update",
+    "RelativePath": "api/Message/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "HelloApi.Models.Dtos.MessageUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloApi.Controllers.MessageController",
+    "Method": "Delete",
+    "RelativePath": "api/Message/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HelloApi.Controllers.PersonaController",
+    "Method": "GetAll",
+    "RelativePath": "api/Persona",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
