@@ -1,6 +1,4 @@
 ﻿namespace HelloApi.Models.Dtos
 {
-    public class OrderDto
-    {
-    }
+public record OrderDto(int Number, int PersonId);
 }

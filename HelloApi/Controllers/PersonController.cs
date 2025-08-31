@@ -7,11 +7,11 @@ namespace HelloApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EquipoController : ControllerBase
+    public class PersonController : ControllerBase
     {
         private readonly IService<Person> _service;
 
-        public EquipoController(IService<Person> service)
+        public PersonController (IService<Person> service)
         {
             _service = service;
         }
@@ -19,31 +19,31 @@ namespace HelloApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Person>>> Get()
         {
-            var equipos = await _service.GetAllAsync();
-            return Ok(equipos);
+            var persons = await _service.GetAllAsync();
+            return Ok(persons);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Person>> Get(int id)
         {
-            var equipo = await _service.GetByIdAsync(id);
-            if (equipo == null)
+            var person = await _service.GetByIdAsync(id);
+            if (person == null)
                 return NotFound();
-            return Ok(equipo);
+            return Ok(person);
         }
 
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] CreatePersonDto dto)
         {
-            var equipo = new Person
+            var person = new Person
             {
                 FirstName = dto.FirstName,
                 LastName = dto.LastName,
                 Email = dto.Email,
                 CreatedAt = DateTime.UtcNow
             };
-            await _service.CreateAsync(equipo);
-            return Ok("Equipo agregado");
+            await _service.CreateAsync(person);
+            return Ok("Persona agregado");
         }
     }
 }
