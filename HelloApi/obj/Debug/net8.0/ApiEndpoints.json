@@ -131,6 +131,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "HelloApi.Controllers.OrderController",
+    "Method": "GetInvoice",
+    "RelativePath": "api/Order/invoice/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "HelloApi.Controllers.OrderDetailController",
     "Method": "GetAll",
     "RelativePath": "api/OrderDetail",

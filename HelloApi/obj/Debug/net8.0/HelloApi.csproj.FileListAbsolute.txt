@@ -166,13 +166,7 @@ C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Micro
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -188,7 +182,6 @@ C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Mono.
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -437,3 +430,4 @@ C:\Users\re2112\Documents\Desarrollo web\Back\HelloApi - Copy\HelloApi\obj\Debug
 C:\Users\re2112\Documents\Desarrollo web\Back\HelloApi - Copy\HelloApi\obj\Debug\net8.0\HelloApi.pdb
 C:\Users\re2112\Documents\Desarrollo web\Back\HelloApi - Copy\HelloApi\obj\Debug\net8.0\HelloApi.genruntimeconfig.cache
 C:\Users\re2112\Documents\Desarrollo web\Back\HelloApi - Copy\HelloApi\obj\Debug\net8.0\ref\HelloApi.dll
+C:\Users\victo\source\repos\Re-21-12\HelloApiNew\HelloApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -10,10 +10,12 @@ namespace HelloApi.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IService<Order> _service;
+        private readonly OrderService _orderService;
 
-        public OrderController(IService<Order> service)
+        public OrderController(IService<Order> service, OrderService orderService)
         {
             _service = service;
+            _orderService = orderService;
         }
 
         [HttpGet]
@@ -38,6 +40,15 @@ namespace HelloApi.Controllers
             var createdOrder = await _service.CreateAsync(order);
             return CreatedAtAction(nameof(GetAll), new { id = createdOrder.Id }, createdOrder);
         }
-
+        [HttpGet("invoice/{id}")]
+        public async Task<IActionResult> GetInvoice(int id )
+        {
+            var invoice = await _orderService.GetInvoice(id);
+            if (invoice == null)
+            {
+                return NotFound($"No se encontró la orden con ID {id} o el cliente asociado.");
+            }
+            return Ok(invoice);
+        }
     }
 }

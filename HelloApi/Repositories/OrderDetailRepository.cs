@@ -34,10 +34,10 @@ namespace HelloApi.Repositories
         {
             return await _context.OrderDetails.OrderBy(m => m.Id).ToListAsync();
         }
-        public async Task<IEnumerable<OrderDetail>> GetByOrderItem(int orderid, int itemId)
+        public async Task<IEnumerable<OrderDetail>> GetByOrderItem(int orderid)
         {
             return await _context.OrderDetails
-                .Where(orderDetail => orderDetail.OrderId == orderid && orderDetail.ItemId == itemId)
+                .Where(orderDetail => orderDetail.OrderId == orderid )
                 .ToListAsync();
         }
 

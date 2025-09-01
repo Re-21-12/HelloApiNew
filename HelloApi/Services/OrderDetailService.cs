@@ -30,7 +30,7 @@ namespace HelloApi.Services
 
         public async Task<IEnumerable<ReadOrderDetailDto>> GetByOrderItem(int orderId, int itemId)
         {
-            var entities = await _repository.GetByOrderItem(orderId, itemId);
+            var entities = await _repository.GetByOrderItem(orderId);
             var item = await _ItemRepository.GetByIdAsync(itemId);
 
             return entities.Select(e =>
