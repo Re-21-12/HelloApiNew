@@ -37,7 +37,8 @@ namespace HelloApi.Repositories
         public async Task<IEnumerable<OrderDetail>> GetByOrderItem(int orderid)
         {
             return await _context.OrderDetails
-                .Where(orderDetail => orderDetail.OrderId == orderid )
+                .Include(od => od.Item)
+                .Where(orderDetail => orderDetail.OrderId == orderid)
                 .ToListAsync();
         }
 
