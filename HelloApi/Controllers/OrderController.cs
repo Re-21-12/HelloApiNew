@@ -25,7 +25,7 @@ namespace HelloApi.Controllers
             return Ok(messages);
         }
         [HttpPost]
-        public async Task<IActionResult> Create(OrderDto orderDto)
+        public async Task<IActionResult> Create([FromBody] OrderDto orderDto)
         {
             if (orderDto == null)
             {

@@ -18,6 +18,8 @@ namespace HelloApi.Services
         public async Task<OrderDetailDto> CreateOrderDetailAsync(int ItemId, int OrderId,  int quantity)
         {
             var item = await _ItemRepository.GetByIdAsync(ItemId);
+            if (item == null)
+      throw new Exception("El item no existe.");
             var total = item.Price * quantity;
             var entity = await _repository.AddOrderDetailAsync(ItemId, OrderId, total, item.Price, quantity);
         

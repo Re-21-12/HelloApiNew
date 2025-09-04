@@ -33,9 +33,9 @@ namespace HelloApi.Controllers
             return Ok(orderDetails);
         }
         [HttpPost]
-        public async Task<IActionResult> CreateOrderDetail(int ItemId, int OrderId,  int quantity)
+        public async Task<IActionResult> CreateOrderDetail([FromBody] CreateOrderDetailDto request)
         {
-            var orderDetail = await _orderDetailService.CreateOrderDetailAsync(ItemId, OrderId,  quantity);
+            var orderDetail = await _orderDetailService.CreateOrderDetailAsync(request.ItemId, request.OrderId,  request.quantity);
             return CreatedAtAction(nameof(GetAll), new { id = orderDetail.OrderId }, orderDetail);
         }
 

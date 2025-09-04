@@ -165,19 +165,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "ItemId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "OrderId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "quantity",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "HelloApi.Models.Dtos.CreateOrderDetailDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
