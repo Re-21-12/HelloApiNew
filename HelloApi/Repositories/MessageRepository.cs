@@ -4,14 +4,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HelloApi.Repositories
 {
+    //un repositorio permite acceder a la base de datos
     public class MessageRepository : IMessageRepository
     {
+        //inyeccion de dependencias
+        //creamos un atributo 
         private readonly AppDbContext _context;
-
+        //asigna una instancia al atributo
         public MessageRepository(AppDbContext context)
         {
             _context = context;
         }
+        //final de inyeccion de dependencias
+        
+        // altas
 
         public async Task<Message> AddMessageAsync(string message)
         {
@@ -26,7 +32,7 @@ namespace HelloApi.Repositories
             await _context.SaveChangesAsync();
             return entity;
         }
-
+        //Consultas
         public async Task<IEnumerable<Message>> GetAllMessagesAsync()
         {
             return await _context.Messages.OrderBy(m => m.Id).ToListAsync();
@@ -36,7 +42,7 @@ namespace HelloApi.Repositories
         {
             return await _context.Messages.FindAsync(id);
         }
-
+        //Medias
         public async Task<Message?> UpdateMessageAsync(Message message)
         {
             var existing = await _context.Messages.FindAsync(message.Id);
@@ -48,7 +54,7 @@ namespace HelloApi.Repositories
             await _context.SaveChangesAsync();
             return existing;
         }
-
+        //Bajas
         public async Task<bool> DeleteMessageAsync(int id)
         {
             var entity = await _context.Messages.FindAsync(id);

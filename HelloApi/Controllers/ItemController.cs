@@ -4,13 +4,15 @@ using Microsoft.AspNetCore.Mvc;
 using HelloApi.Services;
 using HelloApi.Models;
 namespace HelloApi.Controllers
-{
+{   //Haga un endpoint o un controlador 
     [ApiController]
     [Route("api/[controller]")]
     public class ItemController : ControllerBase
     {
+        //Inyectar un servicio
         private readonly IService<Item> _service;
-
+        
+        //Inyectar un servicio
         public ItemController(IService<Item> service)
         {
             _service = service;
